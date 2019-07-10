@@ -63,6 +63,29 @@ p {
   margin: 10px 0;
 }
 
+#content-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "a c"
+    "b c"
+    "d d";
+  grid-gap: 1.875em 1.875em;
+}
+
+#about-cshacks-wrapper {
+  grid-area: a;
+}
+
+#about-csh-wrapper {
+  grid-area: b;
+}
+
+#schedule-wrapper {
+  grid-area: c;
+}
+
 a:not(.btn) {
   color: var(--fg);
   font-weight: 600;
