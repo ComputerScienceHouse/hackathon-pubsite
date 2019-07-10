@@ -74,16 +74,36 @@ p {
   grid-gap: 1.875em 1.875em;
 }
 
+@media screen and (max-width: 60em) {
+  #content-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "a"
+      "c"
+      "b"
+      "d";
+  }
+}
+
 #about-cshacks-wrapper {
   grid-area: a;
+  padding: 1.875em;
 }
 
 #about-csh-wrapper {
   grid-area: b;
+  padding: 1.875em;
 }
 
 #schedule-wrapper {
   grid-area: c;
+  padding: 1.875em;
+}
+
+#contact-us-wrapper {
+  grid-area: d;
+  padding: 1.875em;
 }
 
 a:not(.btn) {
