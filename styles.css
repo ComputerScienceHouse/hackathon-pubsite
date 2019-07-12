@@ -63,14 +63,23 @@ p {
   margin: 10px 0;
 }
 
+.card {
+  padding: 1.875em;
+  background-color: #340526;
+  border-color: #50103D;
+  border-width: 2pt;
+  border-radius: 0.25em;
+}
+
 #content-wrapper {
+  margin: 1.875em;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
     "a c"
     "b c"
-    "d d";
+    "d e";
   grid-gap: 1.875em 1.875em;
 }
 
@@ -82,28 +91,25 @@ p {
       "a"
       "c"
       "b"
-      "d";
+      "d"
+      "e";
   }
 }
 
 #about-cshacks-wrapper {
   grid-area: a;
-  padding: 1.875em;
 }
 
 #about-csh-wrapper {
   grid-area: b;
-  padding: 1.875em;
 }
 
 #schedule-wrapper {
   grid-area: c;
-  padding: 1.875em;
 }
 
 #contact-us-wrapper {
   grid-area: d;
-  padding: 1.875em;
 }
 
 a:not(.btn) {
@@ -133,6 +139,10 @@ a:hover {
 .btn-red:hover {
   color: white;
   background: var(--csh-primary);
+}
+
+#sponsors {
+  grid-area: e;
 }
 
 #sponsors img {
