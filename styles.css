@@ -79,9 +79,10 @@ p {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "a c"
-    "b c"
-    "d e";
+    "a d"
+    "b d"
+    "c e"
+    "f f";
   grid-gap: 1.875em 1.875em;
 }
 
@@ -91,10 +92,11 @@ p {
     grid-template-rows: auto;
     grid-template-areas:
       "a"
+      "d"
       "c"
       "b"
-      "d"
-      "e";
+      "e"
+      "f";
   }
 }
 
@@ -106,12 +108,16 @@ p {
   grid-area: b;
 }
 
-#schedule-wrapper {
+#faq-wrapper {
   grid-area: c;
 }
 
-#contact-us-wrapper {
+#schedule-wrapper {
   grid-area: d;
+}
+
+#contact-us-wrapper {
+  grid-area: f;
 }
 
 a:not(.btn) {
