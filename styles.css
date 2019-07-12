@@ -126,7 +126,6 @@ a:hover {
 
 .btn#apply {
   font-family: "Rubik Mono One", Rubik, Roboto, sans-serif;
-  font-weight: 900;
   font-size: 0.6em;
   margin-top: 1em;
 }
@@ -135,7 +134,7 @@ a:hover {
   background: var(--csh-secondary);
   transition: 0.3s background;
   color: white;
-  padding: 0.3em 3em;
+  padding: 0.5em 2em;
   border-radius: 40px;
 }
 
