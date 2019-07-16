@@ -83,7 +83,8 @@ p {
     "b d"
     "c e"
     "f f";
-  grid-gap: 1.875em 1.875em;
+  grid-gap: 1em 1em;
+  max-width: 80em;
 }
 
 @media screen and (max-width: 60em) {
