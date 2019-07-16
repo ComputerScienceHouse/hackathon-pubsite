@@ -40,6 +40,10 @@ h2 {
   font-weight: 500;
 }
 
+.spaced-h3 {
+  margin-top: 1em;
+}
+
 h3 {
   font-size: 0.75em;
 }
