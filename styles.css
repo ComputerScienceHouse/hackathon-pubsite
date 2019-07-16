@@ -78,17 +78,19 @@ p {
 }
 
 #content-wrapper {
-  margin: 1.875em;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas:
     "a d"
     "b d"
     "c e"
     "f f";
   grid-gap: 1em 1em;
-  max-width: 80em;
+  max-width: 40em;
 }
 
 @media screen and (max-width: 60em) {
@@ -102,6 +104,7 @@ p {
       "b"
       "e"
       "f";
+    max-width: 25em;
   }
 }
 
@@ -162,6 +165,7 @@ a:hover {
   opacity: 1.0;
   max-height: 50px;
   transition: 0.3s opacity;
+  margin-top: 0.75em;
 }
 
 #sponsors a:not(:first-of-type) {
