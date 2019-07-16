@@ -87,8 +87,7 @@ p {
   grid-template-areas:
     "a d"
     "b d"
-    "c e"
-    "f f";
+    "c e";
   grid-gap: 1em 1em;
   max-width: 40em;
 }
@@ -102,8 +101,7 @@ p {
       "d"
       "c"
       "b"
-      "e"
-      "f";
+      "e";
     max-width: 25em;
   }
 }
@@ -122,10 +120,6 @@ p {
 
 #schedule-wrapper {
   grid-area: d;
-}
-
-#contact-us-wrapper {
-  grid-area: f;
 }
 
 a:not(.btn) {
@@ -168,7 +162,7 @@ a:hover {
   margin-top: 0.75em;
 }
 
-#sponsors a:not(:first-of-type) {
+.sponsor-link {
   margin-left: 20px;
 }
 
@@ -178,6 +172,10 @@ a:hover {
 
 #sponsors a {
   text-decoration: none;
+}
+
+#contact-wrapper {
+  margin-top: 1.875em;
 }
 
 u {
